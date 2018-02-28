@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {withRouter, NavLink} from 'react-router-dom'
 import {logout} from '../store'
+import {Contact} from '../components'
 
 /**
  * COMPONENT
@@ -15,14 +16,23 @@ const Main = (props) => {
 
   return (
     <div id="main">
-      <h1>jt wang</h1>
+      <h1><NavLink to="/about">jt wang</NavLink></h1>
       <nav>
-        <NavLink to="/about">/about me</NavLink>
-        <NavLink to="/portfolio">/my portfolio</NavLink>
-        <NavLink to="/blog">/blog</NavLink>
+        <NavLink
+        to="/about"
+        activeClassName="active-nav">about</NavLink>
+        <NavLink
+        to="/portfolio"
+        activeClassName="active-nav">portfolio</NavLink>
+        <NavLink
+        to="/blog"
+        activeClassName="active-nav">blog</NavLink>
       </nav>
       <div id="content">
       {children}
+      </div>
+      <div id="contact">
+        <Contact />
       </div>
     </div>
   )

@@ -5,7 +5,7 @@ import {withRouter, NavLink} from 'react-router-dom'
 class About extends React.Component {
   render(){
     return (
-      <div>About Me Stuff</div>
+      <div id="about">About Me Stuff</div>
     )
   }
 }

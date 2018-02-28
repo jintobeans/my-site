@@ -1,17 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: sans-serif;
-  margin: 5rem
+  margin: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column
+}
+
+#app{
+  height: 80vh;
+  width: 60vw;
 }
 
 #main{
   display: flex;
   flex-direction: column;
   color: blue;
-  align-items: center
+  align-items: center;
+  height: inherit;
+  width: inherit
+}
+
+#content {
+  height: inherit;
+  width: inherit;
+  margin: 1rem;
+  border: .3rem solid black;
+  padding: 0.5rem
+}
+
+#contact{
+  margin: 1rem;
+
 }
 
 a {
   text-decoration: none;
+  color: blue
+}
+
+a.active-nav{
+  color: pink
 }
 
 label {
