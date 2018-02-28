@@ -1,5 +1,13 @@
 body {
   font-family: sans-serif;
+  margin: 5rem
+}
+
+#main{
+  display: flex;
+  flex-direction: column;
+  color: blue;
+  align-items: center
 }
 
 a {
@@ -13,6 +21,8 @@ label {
 nav a {
   display: inline-block;
   margin: 1em;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 form div {
