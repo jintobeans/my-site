@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import {Route, Switch, Router} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import history from './history'
-import {Main, About, Portfolio, Blog} from './components'
+import {Main, About, Portfolio, Blog, Resume} from './components'
 // import {me} from './store'
 
 /**
@@ -19,6 +19,7 @@ class Routes extends Component {
             <Route path="/about" component={About} />
             <Route path="/portfolio" component={Portfolio} />
             <Route path="/blog" component={Blog} />
+            <Route path="/resume" component={Resume} />
           </Switch>
         </Main>
       </Router>

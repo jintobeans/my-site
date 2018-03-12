@@ -32,12 +32,12 @@ body {
   width: inherit;
   margin: 1rem;
   border: .3rem solid black;
-  padding: 0.5rem
+  padding: 0.5rem;
+  display: flex
 }
 
 #contact{
   margin: 1rem;
-
 }
 
 a {
@@ -63,4 +63,24 @@ nav a {
 form div {
   margin: 1em;
   display: inline-block;
+}
+/*ABOUT*/
+#about {
+  display: flex;
+  padding: 2px 4px;
+  align-items: center
+}
+
+#about-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+#about img{
+  clip-path: circle(100px at center);
+}
+
+#about p{
+  padding: 0 0 0 1rem
 }

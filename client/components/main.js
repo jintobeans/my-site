@@ -24,9 +24,12 @@ const Main = (props) => {
         <NavLink
         to="/portfolio"
         activeClassName="active-nav">portfolio</NavLink>
-        <NavLink
+        {/*<NavLink
         to="/blog"
-        activeClassName="active-nav">blog</NavLink>
+        activeClassName="active-nav">blog</NavLink>*/}
+        <NavLink
+        to="/resume"
+        activeClassName="active-nav">resume</NavLink>
       </nav>
       <div id="content">
       {children}
